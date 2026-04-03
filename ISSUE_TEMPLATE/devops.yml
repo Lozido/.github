@@ -1,0 +1,40 @@
+name: DevOps / Infrastructure
+description: CI/CD, deployment, infrastructure, server config
+title: "[DevOps] "
+labels: ["devops"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả
+      description: Cần thay đổi/setup gì về infrastructure?
+    validations:
+      required: true
+  - type: textarea
+    id: services
+    attributes:
+      label: Services liên quan
+      placeholder: |
+        - Repo: ...
+        - Server/env: staging / production
+        - Service: docker, nginx, GitHub Actions...
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+  - type: dropdown
+    id: env
+    attributes:
+      label: Target Environment
+      options:
+        - "Development"
+        - "Staging"
+        - "Production"
+        - "All"
+    validations:
+      required: true

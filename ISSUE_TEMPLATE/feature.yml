@@ -1,0 +1,42 @@
+name: Feature Request
+description: Đề xuất tính năng mới
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "## Mô tả tính năng"
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả
+      description: Tính năng này làm gì? Giải quyết vấn đề gì?
+      placeholder: "Khi người dùng... tôi muốn... để..."
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Điều kiện để coi tính năng này là hoàn thành
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: tech_notes
+    attributes:
+      label: Tech Notes
+      description: Ghi chú kỹ thuật, API liên quan, hoặc hướng tiếp cận gợi ý
+      placeholder: "Tuỳ chọn..."
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - "🔴 High"
+        - "🟡 Medium"
+        - "🟢 Low"
+    validations:
+      required: true

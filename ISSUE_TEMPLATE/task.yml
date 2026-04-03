@@ -1,0 +1,37 @@
+name: Task
+description: Công việc thông thường / intern task
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả công việc
+      description: Cần làm gì?
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+  - type: dropdown
+    id: team
+    attributes:
+      label: Team
+      options:
+        - "Owner"
+        - "Renter"
+        - "Job"
+        - "BA"
+        - "QA"
+        - "DevOps"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: "Ghi chú thêm..."

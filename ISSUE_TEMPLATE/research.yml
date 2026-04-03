@@ -1,0 +1,32 @@
+name: Research / Spike
+description: Khảo sát kỹ thuật hoặc nghiên cứu giải pháp
+title: "[Research] "
+labels: ["research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Câu hỏi cần trả lời
+      description: Mục tiêu của spike này là gì?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Hướng tiếp cận
+      placeholder: |
+        - Đọc tài liệu...
+        - PoC với...
+        - So sánh...
+  - type: textarea
+    id: output
+    attributes:
+      label: Output kỳ vọng
+      description: Kết quả sau spike là gì? (doc, PoC code, quyết định kỹ thuật...)
+    validations:
+      required: true
+  - type: input
+    id: timebox
+    attributes:
+      label: Timebox
+      placeholder: "VD: 2 ngày"

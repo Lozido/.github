@@ -1,0 +1,43 @@
+name: Task
+description: Công việc thông thường / intern task
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Mô tả công việc
+      description: Cần làm gì? Mục tiêu là gì?
+    validations:
+      required: true
+
+  - type: input
+    id: module
+    attributes:
+      label: Module
+      placeholder: "VD: Auth, Chat, Notification, UI..."
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: "VD: 2026-04-15"
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - "🟢 Low"
+        - "🟡 Medium"
+        - "🔴 High"
+    validations:
+      required: true
+
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Checklist
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
